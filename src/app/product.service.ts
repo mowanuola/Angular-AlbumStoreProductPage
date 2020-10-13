@@ -9,7 +9,6 @@ private _albumUrl= '../assets/album.json';
   constructor(private _http: Http) { }
 
   getAlbum(id:number){
-    console.log(this._albumUrl)
     return this._http.get(this._albumUrl).map((response)=>{
       return response.json()
     })
