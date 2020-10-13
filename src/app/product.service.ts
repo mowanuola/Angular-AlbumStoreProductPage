@@ -10,7 +10,7 @@ private _albumUrl= '../assets/album.json';
 
   getAlbum(id:number){
     return this._http.get(this._albumUrl).map((response)=>{
-      return response.json()
+       response.json()
     })
   }
 }
